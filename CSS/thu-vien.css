@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+/* yeu cau cac box khi them duong vien hoac padding thi them vao trong (inside)*/
+*{ box-sizing: border-box} 
+
+.row{ 
+	display: flex;
+	flex-wrap: wrap
+}
+.container
+{
+	width: 80%;
+	margin: 0 auto
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px 
+}
+/*--------- thu vien mau-nền-----------*/
+.bg-primary {	background-color: #333131}
+.bg-secondary{ background-color:black}
+.bg-white{ background: #8A8181; padding: 15px}
+/*--------- thu vien mau-chữ-----------*/
+.text-light { color: #fff}
+.text-primary{ color: #EFC5F5}
+.text-secondary{ color:#F38F00 }
+/*--- style cho btn--button--*/
+.btn-primary 
+{
+	background-color: #292525;
+	color: white;
+	text-decoration: none; /*bỏ gạch chân*/
+	padding: 5px 15px; 
+	border: none /*không đường viền*/
+}
+.btn-primary:hover /* -- khi user đưa trỏ vào nút btn-này thì đổi màu nền*/
+{
+	background: #F6C9FF
+} 
+/*--------- thu vien canh gióng chữ-----------*/
+.text-right{ text-align: right}
+.text-center{ text-align: center}
+
+.img-100 { width: 100%; height: auto}
+.pl-50{ padding-left: 50px}
+.pr-50{ padding-right: 50px}
+.px-50{ padding-left: 50px; padding-right: 50px}
+
+/*-----------------dinh dang flex--------------------*/
+.d-flex{ display: flex}
+/*-----------------dinh dang flex chieu doc--------------------*/
+.align-items-start{align-items: flex-start}
+.align-items-center{align-items: center}
+.align-items-end{align-items: flex-end}
+/*-----------dinh dang flex chieu ngang--------------------------*/
+.justify-center{ justify-content: center}
+.justify-end{ justify-content:flex-end}
+.justify-between{ justify-content:space-between}
+
+.mt-50{ margin-top: 50px}
+/*----- ----------style cot cho ipad-----------------*/
+@media (min-width:600px)
+{
+	.col-md-1{width:8.33%}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+}
+
+/*----- ----------style cot cho pc- 1000px tro len----------------*/
+@media (min-width:1000px)
+{
+	.col-lg-1{width:8.33%}
+	.col-lg-2 {width: 16.66%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-4 {width: 33.33%;}
+	.col-lg-5 {width: 41.66%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-7 {width: 58.33%;}
+	.col-lg-8 {width: 66.66%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-10 {width: 83.33%;}
+	.col-lg-11 {width: 91.66%;}
+	.col-lg-12 {width: 100%;}
+}
+
+
+
+
+
+
